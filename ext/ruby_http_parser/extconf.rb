@@ -18,6 +18,7 @@ src_dir = File.expand_path('../', __FILE__)
   }
 end
 
+$defs << '-DHTTP_PARSER_STRICT=0'
 $CFLAGS << " -I#{src_dir}"
 
 dir_config("ruby_http_parser")
